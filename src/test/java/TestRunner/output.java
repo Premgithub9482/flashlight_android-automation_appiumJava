@@ -183,18 +183,18 @@ public class output extends setup{
     //     }
     // }
 
-    @Test(priority = 11,description = "Allow access to record Picture and video")
-    public void picture_capture_allow(){
-        try {
-            flashlight_functns.Acceptapp_launch();
-            flashlight_functns = new landscreen(driver);
-            flashlight_functns.picture_capture_allow_meth();
+    // @Test(priority = 11,description = "Allow access to record Picture and video")
+    // public void picture_capture_allow(){
+    //     try {
+    //         flashlight_functns.Acceptapp_launch();
+    //         flashlight_functns = new landscreen(driver);
+    //         flashlight_functns.picture_capture_allow_meth();
             
-        } catch (Exception e) {
-            flashlight_functns = new landscreen(driver);
-            flashlight_functns.picture_capture_allow_meth();  
-        }
-    }
+    //     } catch (Exception e) {
+    //         flashlight_functns = new landscreen(driver);
+    //         flashlight_functns.picture_capture_allow_meth();  
+    //     }
+    // }
 
     @Test(priority = 12,description = "Back from camera page button")
     public void exit_camera_page(){
@@ -235,10 +235,18 @@ public class output extends setup{
         }
     }
 
-    
-
-
-
+    // @Test(priority = 15,description = "Allow access to record Picture and video")
+    // public void picture_capture_allow(){
+    //     try {
+    //         flashlight_functns.Acceptapp_launch();
+    //         flashlight_functns = new landscreen(driver);
+    //         flashlight_functns.picture_capture_allow_meth();
+            
+    //     } catch (Exception e) {
+    //         flashlight_functns = new landscreen(driver);
+    //         flashlight_functns.picture_capture_allow_meth();  
+    //     }
+    // }
 
     
 }

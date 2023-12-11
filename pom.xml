@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>appiumproject</artifactId>
+  <artifactId>FLASHLIGHTAPPIM</artifactId>
   <version>1.0</version>
 
   <name>appiumproject</name>
@@ -37,6 +37,12 @@
         <artifactId>commons-io</artifactId>
         <version>2.11.0</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+<dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-testng</artifactId>
+    <version>2.25.0</version>
+</dependency>
 
     <!-- https://mvnrepository.com/artifact/org.testng/testng -->
     <dependency>
@@ -61,6 +67,11 @@
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
+        <!-- <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.2.2</version>
+        </plugin> -->
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.0</version>
@@ -85,6 +96,16 @@
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
           <version>3.7.1</version>
+        </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M5</version> <!-- Use the appropriate version -->
+            <configuration>
+                <suiteXmlFiles>
+                    <suiteXmlFile>C:/AutoamtionPractice/mobile_automation/flashlightappim/testng.xml</suiteXmlFile>
+                </suiteXmlFiles>
+            </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>

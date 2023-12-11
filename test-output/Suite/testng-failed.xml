@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test name="Test(failed)">
+    <classes>
+      <class name="TestRunner.output">
+        <methods>
+          <include name="strobe_back_img_btn"/>
+          <include name="close"/>
+          <include name="Clap_btn_click"/>
+          <include name="screenShot"/>
+          <include name="ScreenFlashPage_exit"/>
+          <include name="Launchapp"/>
+          <include name="runcases"/>
+          <include name="ScreenFlash_land"/>
+          <include name="QuickFlah_tap_btn"/>
+          <include name="strobe_btn_click"/>
+        </methods>
+      </class> <!-- TestRunner.output -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
