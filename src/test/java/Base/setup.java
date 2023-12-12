@@ -19,11 +19,11 @@ public class setup {
     public AndroidDriver Launchapp() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platformName","Android");
-        // caps.setCapability("deviceName","pixel7");
+        caps.setCapability("deviceName","LRWKDQTWCIZD7XKZ");
         caps.setCapability("automationName","UiAutomator2");
         caps.setCapability("appPackage", "com.rvappstudios.flashlight");
         caps.setCapability("appActivity", "com.rvappstudios.flashlight.SplaceActivity"); 
-        caps.setCapability("autoGrantPermissions", true);
+        // caps.setCapability("autoGrantPermissions", true);
 
 
         // Set the adb execution timeout to a higher value
@@ -44,27 +44,27 @@ public class setup {
         return driver;
     }
 
-    @AfterMethod
-    public void screenShot(ITestResult result){
-        if(ITestResult.FAILURE==result.getStatus()){
-            try{
-                ScreenshotUtility utils=new ScreenshotUtility();
-                utils.takeScreenshotForFailure(driver);
-            }
-            catch (Exception exception){
-                System.out.println(exception.toString());
-            }
-        }
-        else{
-            try{
-                ScreenshotUtility utils=new ScreenshotUtility();
-                utils.takeScreenshotForSuccess(driver);
-            }
-            catch (Exception exception){
-                System.out.println(exception.toString());
-            }
-        }
-    }
+    // @AfterMethod
+    // public void screenShot(ITestResult result){
+    //     if(ITestResult.FAILURE==result.getStatus()){
+    //         try{
+    //             ScreenshotUtility utils=new ScreenshotUtility();
+    //             utils.takeScreenshotForFailure(driver);
+    //         }
+    //         catch (Exception exception){
+    //             System.out.println(exception.toString());
+    //         }
+    //     }
+    //     else{
+    //         try{
+    //             ScreenshotUtility utils=new ScreenshotUtility();
+    //             utils.takeScreenshotForSuccess(driver);
+    //         }
+    //         catch (Exception exception){
+    //             System.out.println(exception.toString());
+    //         }
+    //     }
+    // }
 
     @AfterTest
     public void close() throws InterruptedException{
