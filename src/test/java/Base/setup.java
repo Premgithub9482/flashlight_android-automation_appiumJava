@@ -39,7 +39,7 @@ public class setup {
         
 
         // setting up appium code
-        URL url = new URL("http://0.0.0.0:4723/");
+        URL url = new URL("http://127.0.0.1:4723/");
         driver = new AndroidDriver(url, caps);
         return driver;
     }
